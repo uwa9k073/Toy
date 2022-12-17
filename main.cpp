@@ -5,11 +5,6 @@
 int main(int argc, const char * argv[]) {
     std::string str;
     std::ifstream fin("file.txt");
-    if(fin.fail()){
-        std::cout <<"PIZDA\n";
-        return 0;
-        
-    }
     std::getline(fin, str);
     int countOfSpaces = 0, m = -1;
     for(auto el: str){
